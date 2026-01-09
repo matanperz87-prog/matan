@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management System</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.tailwindcss.com/2.2.19" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navbar (or header) -->
+    <header class="bg-white shadow">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <!-- Logo or Branding -->
+                    <a href="#" class="text-xl font-bold text-indigo-500">Course Management</a>
+                </div>
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#dashboard" class="text-gray-600 hover:text-blue-500">Dashboard</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Courses</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Students</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Reports</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow p-4">
+        <section id="dashboard" class="bg-white shadow rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Dashboard</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Metrics Cards -->
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-indigo-800 mb-2">Courses</h3>
+                    <p class="text-gray-700">123</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-green-800 mb-2">Students</h3>
+                    <p class="text-gray-700">456</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold text-red-800 mb-2">Enrollments</h3>
+                    <p class="text-gray-700">789</p>
+                </div>
+            </div>
+
+            <!-- Interactive Chart -->
+            <div class="mt-4">
+                <h3 class="text-lg font-bold text-indigo-800 mb-2">Enrollment Trends</h3>
+                <!-- Placeholder for Chart (you can use Chart.js here) -->
+                <canvas id="enrollmentChart" width="100%" height="45"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (or footer) -->
+    <footer class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 py-3 text-center">
+            &copy; 2023 Course Management System. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Tailwind JS (you can include it separately or in your main JavaScript file) -->
+    <script src="https://cdn.tailwindcss.com/2.2.19"></script>
+</body>
+</html>
